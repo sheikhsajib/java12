@@ -1,5 +1,1 @@
-git init
-git status
-git remote
-java program
-git pull
+
