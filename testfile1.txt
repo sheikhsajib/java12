@@ -1,4 +1,99 @@
-			//je koyta number dawa hobe tar moddho tekhe je gulo prime number dekhabe///
+			//two array sort///
+			
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sundayfinalexam;
+import java.util.Arrays;
+/**
+ *
+ * @author user
+ */
+public class Two_Dim_Array {
+     public static void main(String[] args) {
+        
+        int [][] x = {
+                    {4,2,6,3,10},
+                    {5,1,11,9,0},
+                    {7,12,8,15,20}
+                    };
+        
+        int temp = 0;
+        
+        for(int k = 0;k <x.length;k++){
+        int [] a = x[k]; 
+        
+        for(int j = 0;j <a.length;j++){
+            for(int i = 0;i < a.length-1;i++){
+                if(a[i] > a[i+1]){
+                    temp = a[i];
+                    a[i] = a[i+1];
+                    a[i+1] = temp;
+                    
+                }
+              }
+            }
+        System.out.println(Arrays.toString(a));
+          }
+        
+     
+        }
+}
+*//
+
+
+			////Random Number///
+
+import java.util.Random;
+//*main class e//
+     Random rand=new Random();
+        for(int i=1;i<=10;i++){
+            int randomNumber=rand.nextInt(100);
+            System.out.println(randomNumber+" ");
+        }
+
+			///Conditonal Sum///
+
+//* method/
+
+
+package sundayfinalexam;
+
+import java.util.Scanner;
+
+
+public class ConditonalSum {
+    Scanner input=new Scanner(System.in);
+     public void dosum(){
+        int sum=0;
+        while(true){
+            System.out.println("Plz enter value");
+            int val=input.nextInt();
+            if(val !=0){
+                sum +=val;
+        }
+            
+            else{
+                break;
+            } 
+        }
+            System.out.println(sum);
+        }
+}
+
+//* main method///
+
+ ConditonalSum cs=new ConditonalSum();
+   cs.dosum();
+
+
+*//
+
+
+
+//je koyta number dawa hobe tar moddho tekhe je gulo prime number dekhabe///
 package com.exam;
 
 import java.util.ArrayList;
