@@ -786,5 +786,30 @@ public class TestGreading {
     }
     
 }
+				///gcd gosagu losagu///
+				
+
+package sundayfinalexam;
+
+
+public class Gosagu_Losagu {
+    public void gcd(int x ,int y){
+        int gcd=1;
+        for(int i=1; i<=x && i<=y;i++){
+            if(x%i==0 && y%i==0){
+                gcd=i;
+               
+            }
+        }
+         System.out.println(gcd);
+    }
+    
+    
+}
+//*
+ Gosagu_Losagu gd=new Gosagu_Losagu();
+        gd.gcd(15, 20);
+	
+	*//
 
 
