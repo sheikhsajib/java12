@@ -1,1 +1,695 @@
+			//je koyta number dawa hobe tar moddho tekhe je gulo prime number dekhabe///
+package com.exam;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Prime_number {
+    public static void main(String[] args) {
+       
+        int a=5;
+        List list=new ArrayList();
+        for(int j=0;j<=a;j++){
+            
+        int b=0;
+        for(int i=1; i<=j;i++){
+            
+            if(j%i==0){
+                b++;
+                
+            }
+        }if(b==2){
+            list.add(j);
+        }
+    }
+     System.out.println(list);
+}
+}
+
+
+			//Array diye Prime number///
+
+package exam.com;
+
+import java.util.Arrays;
+
+
+public class Array_Prime_Number {
+    public static void main(String[] args) {
+        
+        int [] a = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,10};
+        System.out.print("Prime number is :\n");
+        for(int j = 0;j < a.length; j++){
+           
+            int b = 0;
+            for(int i = 1;i <= a[j];i++){
+               if(a[j]%i == 0){
+                   b++;
+               } 
+                   
+            }
+           if(b==2){
+                System.out.println(a[j]);
+            }
+            
+            }
+         
+        }
+    }
+//*
+
+
+
+
+
+				///Prime Number method diye////
+
+
+package examfinalpactice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class FibonnaciNumber {
+    
+   
+    public  void primeNumber() {
+        
+       
+        int a=50;
+        List list=new ArrayList();
+        for(int j=0;j<=a;j++){
+            
+        int b=0;
+        for(int i=1; i<=j;i++){
+            
+            if(j%i==0){
+                b++;
+                
+            }
+        }if(b==2){
+            list.add(j);
+        }
+    }
+     System.out.println(list);
+}
+}
+
+
+////* Main Method diye///*
+
+
+ FibonnaciNumber mn = new FibonnaciNumber();
+        mn.primeNumber();
+
+///**
+
+
+
+					////Fibonacci Number//
+
+int n1=0;
+         int n2=1;
+         int n3=0;
+         
+         int count=5;  
+ System.out.print(n1+" "+n2);  
+  
+ for(int i=1;i<count;i++)
+ {  
+  n3=n1+n2;  
+   System.out.print(" "+n3); 
+  n1=n2;  
+  n2=n3;  
+    
+}
+
+				/////Max Min////
+
+
+
+package examfinalpactice;
+
+import java.util.Scanner;
+
+
+public class TestMaxMin {
+   Scanner s=new Scanner(System.in);
+      public void maxMinCount(){
+          System.out.println("Plese Entetr Your Range");
+          int n=s.nextInt();
+          int max=0;
+          int [] arr=new int[n];
+          
+          for(int i=0;i<n;i++){
+              System.out.println("Please Enter Value For"+(i+1));
+              int value=s.nextInt();
+              arr[i]=value;
+          }
+          int min=arr[0];
+          for (int a : arr) {
+              if(a>max){
+                  max=a;
+              }
+              if(a<min){
+                  min=a;
+              } 
+          }
+          System.out.println("This is max "+ max);
+          System.out.println("This is min "+ min);
+          
+       
+}
+    
+}
+
+
+///*main method///Max min//*
+
+TestMaxMin mn = new TestMaxMin();
+        mn.maxMinCount();
+
+
+
+				///*Prime number///
+
+
+package examfinalpactice;
+
+
+public class TestPrimeNumber {
+   public void checkprime(int x){
+       int count=0;
+       for(int i=1;i<=x;i++){
+           if(x%i==0){
+               count++;
+           }
+       }
+        if(count==2){
+            System.out.println(x+" Is a prime Number");
+        } 
+        else{
+            System.out.println(x+" Is not a prime Number");
+        }
+   }
+    
+}
+//*Main Method//*
+
+
+package examfinalpactice;
+
+import java.util.Scanner;
+
+public class ExamFinalPactice {
+
+    public static void main(String[] args) {
+       
+        Scanner input=new Scanner(System.in);
+        TestPrimeNumber tpn=new TestPrimeNumber();
+      
+      System.out.println("Please Enter Your Value");
+       int value=input.nextInt();
+        tpn.checkprime(value);
+      
+        
+    }
+    
+}
+
+//*
+
+				//Fibonacci Number//*
+
+
+*//
+
+package examfinalpactice;
+
+
+import java.util.Scanner;
+
+public class FibonnaciNumber {
+    public static void main(String[] args) {
+        
+   
+    
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        System.out.println("Output");
+        int x = 0;
+        int y = 1;
+        int z = 0;
+        System.out.print(x + "\n" + y + "\n");
+        for (int i = 2; i < a; i++) {
+            z = x+y;
+            System.out.println(z+" ");
+            x = y;
+            y = z;
+        }
+    
+}
+}
+//*
+
+				///Fibonacci method diye///*
+
+
+package examfinalpactice;
+
+
+import java.util.Scanner;
+public class FibonnaciNumber {
+    public void fibonnaciNumber() {
+        
+
+     Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        System.out.println("Output");
+        int x = 0;
+        int y = 1;
+        int z = 0;
+        System.out.print(x + "\n" + y + "\n");
+        for (int i = 2; i < a; i++) {
+            z = x+y;
+            System.out.println(z+" ");
+            x = y;
+            y = z;
+        }
+       
+    
+}
+}
+			///*& main Method///
+
+FibonnaciNumber mn = new FibonnaciNumber();
+        mn.fibonnaciNumber();
+
+
+
+				////Factorial Number/////*
+
+//*
+
+package examfinalpactice;
+
+
+import java.util.Scanner;
+
+public class FactorialNumber {
+    public static void main(String[] args) {
+        
+   
+    
+       Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number:  ");
+        int r = input.nextInt();
+        System.out.println("Factorial" + " is " + factorial(r));
+    }
+
+    public static long factorial(int r) {
+        if (r == 0) {
+            return 1;
+        } else {
+            return r * factorial(r - 1);
+        }
+    
+}
+}
+//*
+
+			///Factorial method diye///
+
+//*
+
+
+package examfinalpactice;
+
+
+import java.util.Scanner;
+public class FibonnaciNumber {
+    public void getFactorial (){
+        
+   
+    
+       Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number:  ");
+        int r = input.nextInt();
+        System.out.println("Factorial" + " is " + factorial(r));
+    }
+
+    public int factorial(int r) {
+        if (r == 0) {
+           return 1;
+        } else {
+            return r * factorial(r - 1);
+        }
+    
+}
+}
+
+//*			//*main method e//*
+
+ FibonnaciNumber mn = new FibonnaciNumber();
+        mn.factorial(5);
+        mn.getFactorial();
+
+///**
+
+				////Odd Even Number///
+
+
+package exam.com;
+
+import java.util.Scanner;
+
+
+public class Odd_Even {
+    public static void main(String[] args) {
+        
+        int a = 0;
+        int b = 0;
+        Scanner c = new Scanner (System.in);
+        
+        System.out.println("Enter a value");
+        a = c.nextInt();
+        if(a%2 == 0){
+        System.out.println("Even Number");
+    }else{
+    System.out.println("Odd Number");
+}
+}
+}
+///**
+
+					///Class e kora main method////
+
+
+//*
+
+
+package finalexam;
+
+import java.util.Scanner;
+
+
+public class FinalExam  {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        TestRecursion ts=new TestRecursion();
+        
+        
+                ///extend korar por//
+       TestSumStatic tm=new TestSumStatic();
+    
+       System.out.println(tm.dosum(12,45,67,89,66));
+       System.out.println( tm.doMultipy(12,23));
+        
+        ///Main kaj//
+           System.out.println(ts.dosum(20,23,22,45,67,43));
+       System.out.println(ts.dosum(20.33,23.34,22.56,45.00,67,43));
+        
+       System.out.println(TestSumStatic.dosum(12,12,78,56,45,56));
+
+
+                ///Prime Number///
+             /*
+            Scanner input= new Scanner(System.in);
+            TestPrimeNumber tpm= new TestPrimeNumber();
+            System.out.println("Please Enter Your Value");
+            int user=input.nextInt();
+            tpm.primeNumber(user);
+            */
+            
+            ///Max Min////
+            /*
+            TestMaxMin mn = new TestMaxMin();
+            mn.maxMinNumber();
+            */
+
+    }
+    
+}
+*//
+
+				///method/// 
+
+
+package finalexam;
+
+
+public abstract class TestOverride  {
+    public abstract int dosum(int... a);
+        
+    public abstract double dosum(double...a);
+       
+    
+}
+
+				///Extend + override////
+
+//*
+
+package finalexam;
+
+
+public class TestRecursion extends TestOverride {
+
+    
+    @Override
+    public int dosum(int... a){
+        int sum=0;
+        for (int val : a) {
+            sum +=val;
+            
+        }
+        return sum;
+    } 
+    @Override
+    public double dosum(double...a){
+        double sum=0;
+        for (double val : a) {
+            sum +=val; 
+        }
+        return sum;
+    }
+    
+}
+
+*//
+
+			///Abar extend + new method call///
+
+//*
+
+
+package finalexam;
+
+
+public class TestSumStatic extends TestRecursion {
+    
+    public int doMultipy(int... a){
+        int sum=0;
+        for (int val : a) {
+            sum *=val;
+            
+        }
+        return sum;
+    } 
+   
+    public double doMultipy(double...a){
+        double sum=0;
+        for (double val : a) {
+            sum *=val; 
+        }
+        return sum;
+    }
+    
+    
+}
+
+*//
+
+                          Array-sorting
+ 
+public static void main(String[] args) {
+        int a[][]={{1,3,5,2},
+                   {2,1,3,4},
+                   {6,8,7,3}
+                    };
+        int x[]=a[0];
+        int r=0;
+        for (int i = 0; i <x.length; i++) {
+            for (int j = 0; j <x.length-1; j++) {
+                if(x[j]>x[j+1]){
+                    r=x[j];
+                    x[j]=x[j+1];
+                    x[j+1]=r;
+                }
+                
+            }
+            
+        }System.out.println(Arrays.toString(x));
+    }
+ 
+                              Array_search
+ 
+ 
+ public static void main(String[] args) {
+        
+    int a[][]={{2,3,2,5},
+        {2,4,5,2},
+        {4,3,2,1},
+        {5,6,3,2}
+    };
+    Scanner x=new Scanner(System.in);
+    int y=x.nextInt();
+    int u=0;
+        for (int i = 0; i <a.length; i++) {
+            int f[]=a[i];
+            for (int j = 0; j <f.length; j++) {
+                if(f[j]==y){
+                    u++;
+                }
+            }
+            
+        }System.out.println(u);
+    }
+ 
+ 
+                                ///Arry 2 sort//
+ 
+public class Array_2_sort {
+    public static void main(String[] args) {
+        Scanner y=new Scanner(System.in);
+        int [][]x={{1,2,3},
+            {1,5,6},
+            {1,5,3},
+            
+        };
+       
+            
+            int temp = y.nextInt();
+            int r=0;
+            for (int b = 0; b < x.length; b++) {
+                int n[]=x[b];
+                for (int c = 0; c < x.length; c++) {
+                    if (n[c]==temp) {
+                        r++;
+                       
+                    }
+                }
+            }System.out.println(r);
+            
+ 
+        
+    }
+    
+}
+ 
+ 
+                        ///Greading System///
+grading checkGrading = new grading();
+checkGrading.chkGrade();
+ 
+ 
+ 
+package evidencemethod;
+ 
+import java.util.Scanner;
+ 
+ 
+public class grading {
+    public void chkGrade(){
+    
+      int marks[] = new int[6];
+        int i;
+        float total=0, avg;
+        Scanner scanner = new Scanner(System.in);
+               
+        
+        for(i=0; i<6; i++) { 
+           System.out.print("Enter Marks of Subject"+(i+1)+":");
+           marks[i] = scanner.nextInt();
+           total = total + marks[i];
+        }
+        scanner.close();
+        //Calculating average here
+        avg = total/6;
+        System.out.print("The student Grade is: ");
+        if(avg>=80)
+        {
+            System.out.print("Average is "+ avg + "A");
+        }
+        else if(avg>=60 && avg<80)
+        {
+           System.out.print("Average is "+ avg +"B");
+        } 
+        else if(avg>=40 && avg<60)
+        {
+            System.out.print("Average is "+ avg +"C");
+        }
+        else
+        {
+            System.out.print("Average is "+ avg +"Failed!");
+        }
+    
+    }
+ 
+}
+ 
+                        //Greading System anis///
+ 
+ 
+ 
+package sundayfinalexam;
+import java.util.Scanner;
+ 
+public class TestGreading {
+    
+    public static void main(String[]args){
+        int Java =0;
+        int HTML =0;
+        int CSS =0;
+        int JavaScript =0;
+        int ict = 0;
+        int PHP =0;
+        
+        Scanner re= new Scanner(System.in);
+        System.out.println("Java");
+          Java=re.nextInt();
+           System.out.println("HTML");
+        HTML=re.nextInt();
+         System.out.println("CSS");
+         CSS=re.nextInt();
+          System.out.println("JavaScript");
+        JavaScript=re.nextInt();
+         System.out.println("ict");
+         ict=re.nextInt();
+          System.out.println("PHP");
+          PHP=re.nextInt();
+          int total = Java+HTML+CSS+JavaScript+ict+PHP;
+        int average = total/6;
+        
+        if(average>79 && average<101){
+            System.out.println("Result"+"\n"+"A+");
+        }else if(average>69 && average<80){
+            System.out.println("Result"+"\n"+"A");
+       }else if(average>59 && average<70){
+            System.out.println("Result"+"\n"+"A-");
+       }else if(average>49 && average<60){
+            System.out.println("Result"+"\n"+"B");
+    }else if(average>39 && average<50){
+            System.out.println("Result"+"\n"+"C");
+    }else if(average>33 && average<40){
+            System.out.println("Result"+"\n"+"D");
+    }
+ 
+   
+    }
+    
+}
+
 
